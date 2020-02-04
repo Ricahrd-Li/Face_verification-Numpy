@@ -12,12 +12,12 @@ After train for 20 epoch or so, we get 0.70-0.75 F1 score.
 ---
 The source file are organizd as follows:  
 
-model architecture: [`main.py`](./main.py) 
++ model architecture: [`main.py`](./main.py) 
 
-Forward propagation(FP) computing: [`forward_layers.py`](./forward_layers.py) 
++ Forward propagation(FP) computing: [`forward_layers.py`](./forward_layers.py) 
 
-Backward propagation(BP) computing: [`backward_layers.py`](./backward_layers.py) 
++ Backward propagation(BP) computing: [`backward_layers.py`](./backward_layers.py) 
 
-Data reading and others: [`util.py`](./util.py) 
++ Data reading and others: [`util.py`](./util.py) 
 
-In addition, to find the best threadhold for face comparison (lead to best F1 score), we have [`compute_thr.m `](./compute_thr.m) to do grid search. 
++ In addition, to find the best threadhold for face comparison (lead to best F1 score), we have [`compute_thr.m `](./compute_thr.m) to do grid search. 
