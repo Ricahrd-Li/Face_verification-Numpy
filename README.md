@@ -7,7 +7,7 @@ My roomate (Kelley Kuang) and I implemented a hand-written light-CNN-9 model (wi
 
 We used numpy and img2col technique to acclerate convolution. 
 
-After train for 20 epoch or so, we get 0.70-0.75 F1 score.  
+After train for >30 epochs on training data， we get 0.70-0.75 F1 score on test data.  
 
 ---
 The source file are organizd as follows:  
