@@ -3,9 +3,19 @@
 
 Hi there! 
 
+[](./figures/lightCNN9.png)
+
 My roomate (Kelley Kuang) and I implemented a hand-written light-CNN-9 model (with 24 layers including 9 convolution layers)[[paper link]](https://arxiv.org/abs/1511.02683) for face verification on a subset LFW dataset. 
 
-We used numpy and img2col technique to acclerate convolution. 
+Here is a overview of the face verification system
+
+[](./figure/system.png)
+
+In training we train our DNN as a face classfication problem. Then in testing we use similarity score to verify if the input two images belong to the same person. 
+
+We used numpy and img2col(Check the function `conv` in [`forward_layers.py`](./forward_layers.py) ) technique to acclerate convolution. 
+
+For data preprosession, we use normalization and image cropping. 
 
 After train for >30 epochs on training data, we get 0.70-0.75 F1 score on test data.  
 
